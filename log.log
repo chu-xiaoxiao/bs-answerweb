@@ -1,0 +1,918 @@
+2018-04-02 16:40:58.746  INFO 15812 --- [main] com.zyc.AnswerApplication                : No active profile set, falling back to default profiles: default
+2018-04-02 16:40:58.798  INFO 15812 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@373ebf74: startup date [Mon Apr 02 16:40:58 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6f96c77
+2018-04-02 16:41:01.642  INFO 15812 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=24ffa92e-1b73-3c55-a103-65cca2c1e2c5
+2018-04-02 16:41:01.665  INFO 15812 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-02 16:41:01.768  INFO 15812 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UAnswerHistoryService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:41:01.770  INFO 15812 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UAnswerTempService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:41:01.771  INFO 15812 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UserToPaperHistoryService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:41:01.774  INFO 15812 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UserToPaperTempService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:41:02.095  INFO 15812 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ad1826e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:41:03.588  INFO 15812 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 30003 (http)
+2018-04-02 16:41:03.621  INFO 15812 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-02 16:41:03.622  INFO 15812 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-04-02 16:41:04.236  INFO 15812 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-02 16:41:04.237  INFO 15812 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5439 ms
+2018-04-02 16:41:04.734  INFO 15812 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-02 16:41:04.744  INFO 15812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-02 16:41:04.745  INFO 15812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-02 16:41:04.745  INFO 15812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-02 16:41:04.745  INFO 15812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-02 16:41:04.976  INFO 15812 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3efedc6f: startup date [Mon Apr 02 16:41:04 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@373ebf74
+2018-04-02 16:41:05.034  INFO 15812 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-02 16:41:05.806  WARN 15812 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-02 16:41:05.806  INFO 15812 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-02 16:41:05.812  WARN 15812 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-02 16:41:05.813  INFO 15812 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-02 16:41:06.483  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@373ebf74: startup date [Mon Apr 02 16:40:58 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6f96c77
+2018-04-02 16:41:06.801  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryPaper/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.zyc.controller.AnswerPageController.queryPaper(java.lang.Integer)
+2018-04-02 16:41:06.805  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UAnswer/insert/tempUAnswer],methods=[POST]}" onto public java.lang.String com.zyc.controller.UAnswerController.insert(com.zyc.model.Uanswertemp)
+2018-04-02 16:41:06.806  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UAnswer/insert/historyUAnswer],methods=[POST]}" onto public java.lang.String com.zyc.controller.UAnswerController.tohistory(com.zyc.model.Uanswertemp) throws java.lang.CloneNotSupportedException
+2018-04-02 16:41:06.806  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaper/insert/tempuserToPaper],methods=[POST]}" onto public java.lang.String com.zyc.controller.UserToPaperController.insertTemp(com.zyc.model.Usertopapertemp)
+2018-04-02 16:41:06.806  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaper/insert/historyuserToPaper],methods=[POST]}" onto public java.lang.String com.zyc.controller.UserToPaperController.insertHistory(com.zyc.model.Usertopaperhistory)
+2018-04-02 16:41:06.808  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/update],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerHistoryService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-02 16:41:06.808  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/delete],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerHistoryService.delete(com.zyc.model.Example.UanswerhistoryExample)
+2018-04-02 16:41:06.808  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/insert],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerHistoryService.insert(com.zyc.model.Uanswerhistory)
+2018-04-02 16:41:06.809  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/query],methods=[POST]}" onto public abstract java.util.List<com.zyc.model.Uanswerhistory> com.zyc.service.UAnswerHistoryService.query(com.zyc.model.Example.UanswerhistoryExample)
+2018-04-02 16:41:06.809  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/answer],methods=[POST]}" onto public abstract java.lang.Double com.zyc.service.UAnswerHistoryService.score(com.zyc.model.Uanswerhistory) throws java.lang.CloneNotSupportedException
+2018-04-02 16:41:06.811  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/update],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerTempService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-02 16:41:06.812  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/delete],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerTempService.delete(com.zyc.model.Example.UanswertempExample)
+2018-04-02 16:41:06.812  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/insert],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerTempService.insert(com.zyc.model.Uanswertemp)
+2018-04-02 16:41:06.812  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/query],methods=[POST]}" onto public abstract java.util.List<com.zyc.model.Uanswertemp> com.zyc.service.UAnswerTempService.query(com.zyc.model.Example.UanswertempExample)
+2018-04-02 16:41:06.812  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/toHistory]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerTempService.toHistory(com.zyc.model.Uanswertemp)
+2018-04-02 16:41:06.874  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/update],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperHistoryService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-02 16:41:06.874  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/delete],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperHistoryService.delete(com.zyc.model.Example.UsertopaperhistoryExample)
+2018-04-02 16:41:06.874  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/insert],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperHistoryService.insert(com.zyc.model.Usertopaperhistory)
+2018-04-02 16:41:06.875  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/query],methods=[POST]}" onto public abstract java.util.List<com.zyc.model.Usertopaperhistory> com.zyc.service.UserToPaperHistoryService.query(com.zyc.model.Example.UsertopaperhistoryExample)
+2018-04-02 16:41:06.876  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/update],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperTempService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-02 16:41:06.876  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/delete],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperTempService.delete(com.zyc.model.Example.UsertopapertempExample)
+2018-04-02 16:41:06.876  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/insert],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperTempService.insert(com.zyc.model.Usertopapertemp)
+2018-04-02 16:41:06.876  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/query],methods=[POST]}" onto public abstract java.util.List<com.zyc.model.Usertopapertemp> com.zyc.service.UserToPaperTempService.query(com.zyc.model.Example.UsertopapertempExample)
+2018-04-02 16:41:06.877  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-02 16:41:06.878  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-02 16:41:06.915  INFO 15812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-02 16:41:06.916  INFO 15812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-02 16:41:07.226  INFO 15812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-02 16:41:09.462  INFO 15812 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2018-04-02 16:41:12.088  INFO 15812 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2018-04-02 16:41:12.347  WARN 15812 --- [main] arterDeprecationWarningAutoConfiguration : spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+2018-04-02 16:41:12.667  INFO 15812 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-02 16:41:12.677  INFO 15812 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-04-02 16:41:12.678  INFO 15812 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-04-02 16:41:12.680  INFO 15812 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-04-02 16:41:12.772  INFO 15812 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-04-02 16:41:12.783  INFO 15812 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-04-02 16:41:12.794  INFO 15812 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=373ebf74,type=ConfigurationPropertiesRebinder]
+2018-04-02 16:41:12.810  INFO 15812 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-04-02 16:41:12.885  INFO 15812 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-04-02 16:41:13.154  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-04-02 16:41:13.794  INFO 15812 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-04-02 16:41:13.794  INFO 15812 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-04-02 16:41:14.278  INFO 15812 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-04-02 16:41:14.278  INFO 15812 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-04-02 16:41:14.967  INFO 15812 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-02 16:41:15.724  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-04-02 16:41:15.724  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-04-02 16:41:15.724  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-04-02 16:41:15.724  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-04-02 16:41:15.724  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-04-02 16:41:15.725  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-04-02 16:41:15.725  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-04-02 16:41:16.254  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-04-02 16:41:16.261  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 90
+2018-04-02 16:41:16.265  INFO 15812 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-04-02 16:41:16.277  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1522658476277 with initial instances count: 2
+2018-04-02 16:41:16.478  INFO 15812 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ANSWER-WEB with eureka with status UP
+2018-04-02 16:41:16.480  INFO 15812 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1522658476480, current=UP, previous=STARTING]
+2018-04-02 16:41:16.826  INFO 15812 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 30003 (http)
+2018-04-02 16:41:16.828  INFO 15812 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-02 16:41:16.831  INFO 15812 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 30003
+2018-04-02 16:41:16.838  INFO 15812 --- [main] com.zyc.AnswerApplication                : Started AnswerApplication in 23.482 seconds (JVM running for 24.406)
+2018-04-02 16:41:16.880  INFO 15812 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-02 16:42:46.286  INFO 15812 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-02 16:42:46.286  INFO 15812 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-02 16:42:46.298  INFO 15812 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-02 16:45:52.671  INFO 17392 --- [main] com.zyc.AnswerApplication                : No active profile set, falling back to default profiles: default
+2018-04-02 16:45:52.691  INFO 17392 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@373ebf74: startup date [Mon Apr 02 16:45:52 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6f96c77
+2018-04-02 16:45:55.010  INFO 17392 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=24ffa92e-1b73-3c55-a103-65cca2c1e2c5
+2018-04-02 16:45:55.048  INFO 17392 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-02 16:45:55.087  INFO 17392 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UAnswerHistoryService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:45:55.091  INFO 17392 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UAnswerTempService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:45:55.092  INFO 17392 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UserToPaperHistoryService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:45:55.093  INFO 17392 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UserToPaperTempService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:45:55.285  INFO 17392 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ad1826e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:45:56.155  INFO 17392 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 30003 (http)
+2018-04-02 16:45:56.173  INFO 17392 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-02 16:45:56.175  INFO 17392 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-04-02 16:45:56.525  INFO 17392 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-02 16:45:56.526  INFO 17392 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3835 ms
+2018-04-02 16:45:56.855  INFO 17392 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-02 16:45:56.860  INFO 17392 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-02 16:45:56.872  INFO 17392 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-02 16:45:56.872  INFO 17392 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-02 16:45:56.872  INFO 17392 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-02 16:45:57.486  INFO 17392 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3efedc6f: startup date [Mon Apr 02 16:45:57 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@373ebf74
+2018-04-02 16:45:57.576  INFO 17392 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-02 16:45:58.915  WARN 17392 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-02 16:45:58.915  INFO 17392 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-02 16:45:58.928  WARN 17392 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-02 16:45:58.929  INFO 17392 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-02 16:45:59.280  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@373ebf74: startup date [Mon Apr 02 16:45:52 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6f96c77
+2018-04-02 16:45:59.617  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryPaper/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.zyc.controller.AnswerPageController.queryPaper(java.lang.Integer)
+2018-04-02 16:45:59.619  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UAnswer/insert/tempUAnswer],methods=[POST]}" onto public java.lang.String com.zyc.controller.UAnswerController.insert(com.zyc.model.Uanswertemp)
+2018-04-02 16:45:59.619  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UAnswer/insert/historyUAnswer],methods=[POST]}" onto public java.lang.String com.zyc.controller.UAnswerController.tohistory(com.zyc.model.Uanswertemp) throws java.lang.CloneNotSupportedException
+2018-04-02 16:45:59.619  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaper/insert/tempuserToPaper],methods=[POST]}" onto public java.lang.String com.zyc.controller.UserToPaperController.insertTemp(com.zyc.model.Usertopapertemp)
+2018-04-02 16:45:59.619  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaper/insert/historyuserToPaper],methods=[POST]}" onto public java.lang.String com.zyc.controller.UserToPaperController.insertHistory(com.zyc.model.Usertopaperhistory)
+2018-04-02 16:45:59.621  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/update],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerHistoryService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-02 16:45:59.621  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/delete],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerHistoryService.delete(com.zyc.model.Example.UanswerhistoryExample)
+2018-04-02 16:45:59.621  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/insert],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerHistoryService.insert(com.zyc.model.Uanswerhistory)
+2018-04-02 16:45:59.621  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/query],methods=[POST]}" onto public abstract java.util.List<com.zyc.model.Uanswerhistory> com.zyc.service.UAnswerHistoryService.query(com.zyc.model.Example.UanswerhistoryExample)
+2018-04-02 16:45:59.621  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/answer],methods=[POST]}" onto public abstract java.lang.Double com.zyc.service.UAnswerHistoryService.score(com.zyc.model.Uanswerhistory) throws java.lang.CloneNotSupportedException
+2018-04-02 16:46:00.152  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/update],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerTempService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-02 16:46:00.153  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/delete],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerTempService.delete(com.zyc.model.Example.UanswertempExample)
+2018-04-02 16:46:00.153  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/insert],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerTempService.insert(com.zyc.model.Uanswertemp)
+2018-04-02 16:46:00.154  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/query],methods=[POST]}" onto public abstract java.util.List<com.zyc.model.Uanswertemp> com.zyc.service.UAnswerTempService.query(com.zyc.model.Example.UanswertempExample)
+2018-04-02 16:46:00.154  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/toHistory]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerTempService.toHistory(com.zyc.model.Uanswertemp)
+2018-04-02 16:46:00.156  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/update],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperHistoryService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-02 16:46:00.156  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/delete],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperHistoryService.delete(com.zyc.model.Example.UsertopaperhistoryExample)
+2018-04-02 16:46:00.156  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/insert],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperHistoryService.insert(com.zyc.model.Usertopaperhistory)
+2018-04-02 16:46:00.156  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/query],methods=[POST]}" onto public abstract java.util.List<com.zyc.model.Usertopaperhistory> com.zyc.service.UserToPaperHistoryService.query(com.zyc.model.Example.UsertopaperhistoryExample)
+2018-04-02 16:46:00.157  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/update],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperTempService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-02 16:46:00.158  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/delete],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperTempService.delete(com.zyc.model.Example.UsertopapertempExample)
+2018-04-02 16:46:00.158  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/insert],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperTempService.insert(com.zyc.model.Usertopapertemp)
+2018-04-02 16:46:00.158  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/query],methods=[POST]}" onto public abstract java.util.List<com.zyc.model.Usertopapertemp> com.zyc.service.UserToPaperTempService.query(com.zyc.model.Example.UsertopapertempExample)
+2018-04-02 16:46:00.160  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-02 16:46:00.264  INFO 17392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-02 16:46:00.304  INFO 17392 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-02 16:46:00.306  INFO 17392 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-02 16:46:00.350  INFO 17392 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-02 16:46:03.176  INFO 17392 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2018-04-02 16:46:06.131  INFO 17392 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2018-04-02 16:46:06.632  WARN 17392 --- [main] arterDeprecationWarningAutoConfiguration : spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+2018-04-02 16:46:07.127  INFO 17392 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-02 16:46:07.137  INFO 17392 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-04-02 16:46:07.138  INFO 17392 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-04-02 16:46:07.140  INFO 17392 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-04-02 16:46:07.143  INFO 17392 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-04-02 16:46:07.338  INFO 17392 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-04-02 16:46:07.349  INFO 17392 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=373ebf74,type=ConfigurationPropertiesRebinder]
+2018-04-02 16:46:07.367  INFO 17392 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-04-02 16:46:07.373  INFO 17392 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-04-02 16:46:07.752  INFO 17392 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-04-02 16:46:08.588  INFO 17392 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-04-02 16:46:08.588  INFO 17392 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-04-02 16:46:08.940  INFO 17392 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-04-02 16:46:08.940  INFO 17392 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-04-02 16:46:10.224  INFO 17392 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-02 16:46:11.169  INFO 17392 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-04-02 16:46:11.169  INFO 17392 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-04-02 16:46:11.169  INFO 17392 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-04-02 16:46:11.169  INFO 17392 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-04-02 16:46:11.169  INFO 17392 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-04-02 16:46:11.169  INFO 17392 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-04-02 16:46:11.169  INFO 17392 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-04-02 16:46:11.453  INFO 17392 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-04-02 16:46:11.455  INFO 17392 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 90
+2018-04-02 16:46:11.458  INFO 17392 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-04-02 16:46:11.462  INFO 17392 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1522658771462 with initial instances count: 4
+2018-04-02 16:46:11.485  INFO 17392 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ANSWER-WEB with eureka with status UP
+2018-04-02 16:46:11.487  INFO 17392 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1522658771487, current=UP, previous=STARTING]
+2018-04-02 16:46:11.553  INFO 17392 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-02 16:46:11.604  INFO 17392 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 30003 (http)
+2018-04-02 16:46:11.605  INFO 17392 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 30003
+2018-04-02 16:46:11.608  INFO 17392 --- [main] com.zyc.AnswerApplication                : Started AnswerApplication in 24.131 seconds (JVM running for 25.366)
+2018-04-02 16:46:11.609  INFO 17392 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-02 16:47:41.487  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-02 16:47:41.488  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-02 16:47:41.510  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-02 16:49:11.527  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-02 16:49:11.527  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-02 16:49:11.537  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-02 16:50:41.557  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-02 16:50:41.558  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-02 16:50:41.569  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-02 16:51:11.173  INFO 17392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-02 16:52:11.588  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-02 16:52:11.589  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-02 16:52:11.598  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-02 16:53:41.628  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-02 16:53:41.629  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-02 16:53:41.852  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-02 16:55:11.864  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-02 16:55:11.865  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-02 16:55:11.877  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-02 16:56:11.174  INFO 17392 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-02 16:56:24.401  INFO 20988 --- [main] com.zyc.AnswerApplication                : No active profile set, falling back to default profiles: default
+2018-04-02 16:56:24.416  INFO 20988 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@373ebf74: startup date [Mon Apr 02 16:56:24 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6f96c77
+2018-04-02 16:56:25.382  INFO 20988 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=24ffa92e-1b73-3c55-a103-65cca2c1e2c5
+2018-04-02 16:56:25.400  INFO 20988 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-02 16:56:25.425  INFO 20988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UAnswerHistoryService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:56:25.427  INFO 20988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UAnswerTempService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:56:25.428  INFO 20988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UserToPaperHistoryService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:56:25.430  INFO 20988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UserToPaperTempService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:56:25.555  INFO 20988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ad1826e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:56:26.180  INFO 20988 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 30003 (http)
+2018-04-02 16:56:26.193  INFO 20988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-02 16:56:26.194  INFO 20988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-04-02 16:56:26.475  INFO 20988 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-02 16:56:26.476  INFO 20988 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2061 ms
+2018-04-02 16:56:26.812  INFO 20988 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-02 16:56:26.820  INFO 20988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-02 16:56:26.828  INFO 20988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-02 16:56:26.828  INFO 20988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-02 16:56:26.828  INFO 20988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-02 16:56:26.989  INFO 20988 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@61a1ea2c: startup date [Mon Apr 02 16:56:26 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@373ebf74
+2018-04-02 16:56:27.023  INFO 20988 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-02 16:56:27.399  WARN 20988 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-02 16:56:27.399  INFO 20988 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-02 16:56:27.404  WARN 20988 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-02 16:56:27.405  INFO 20988 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-02 16:56:27.560  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@373ebf74: startup date [Mon Apr 02 16:56:24 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6f96c77
+2018-04-02 16:56:27.754  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryPaper/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.zyc.controller.AnswerPageController.queryPaper(java.lang.Integer)
+2018-04-02 16:56:27.756  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UAnswer/insert/tempUAnswer],methods=[POST]}" onto public java.lang.String com.zyc.controller.UAnswerController.insert(com.zyc.model.Uanswertemp)
+2018-04-02 16:56:27.757  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UAnswer/insert/historyUAnswer],methods=[POST]}" onto public java.lang.String com.zyc.controller.UAnswerController.tohistory(com.zyc.model.Uanswertemp) throws java.lang.CloneNotSupportedException
+2018-04-02 16:56:27.758  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaper/insert/historyuserToPaper],methods=[POST]}" onto public java.lang.String com.zyc.controller.UserToPaperController.insertHistory(com.zyc.model.Usertopaperhistory)
+2018-04-02 16:56:27.758  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaper/insert/tempuserToPaper],methods=[POST]}" onto public java.lang.String com.zyc.controller.UserToPaperController.insertTemp(com.zyc.model.Usertopapertemp)
+2018-04-02 16:56:27.760  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/update],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerHistoryService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-02 16:56:27.760  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/delete],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerHistoryService.delete(com.zyc.model.Example.UanswerhistoryExample)
+2018-04-02 16:56:27.760  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/insert],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerHistoryService.insert(com.zyc.model.Uanswerhistory)
+2018-04-02 16:56:27.760  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/query],methods=[POST]}" onto public abstract java.util.List<com.zyc.model.Uanswerhistory> com.zyc.service.UAnswerHistoryService.query(com.zyc.model.Example.UanswerhistoryExample)
+2018-04-02 16:56:27.760  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/answer],methods=[POST]}" onto public abstract java.lang.Double com.zyc.service.UAnswerHistoryService.score(com.zyc.model.Uanswerhistory) throws java.lang.CloneNotSupportedException
+2018-04-02 16:56:27.763  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/update],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerTempService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-02 16:56:27.763  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/delete],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerTempService.delete(com.zyc.model.Example.UanswertempExample)
+2018-04-02 16:56:27.763  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/insert],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerTempService.insert(com.zyc.model.Uanswertemp)
+2018-04-02 16:56:27.764  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/query],methods=[POST]}" onto public abstract java.util.List<com.zyc.model.Uanswertemp> com.zyc.service.UAnswerTempService.query(com.zyc.model.Example.UanswertempExample)
+2018-04-02 16:56:27.764  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/toHistory]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerTempService.toHistory(com.zyc.model.Uanswertemp)
+2018-04-02 16:56:27.765  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/update],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperHistoryService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-02 16:56:27.765  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/delete],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperHistoryService.delete(com.zyc.model.Example.UsertopaperhistoryExample)
+2018-04-02 16:56:27.766  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/insert],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperHistoryService.insert(com.zyc.model.Usertopaperhistory)
+2018-04-02 16:56:27.766  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/query],methods=[POST]}" onto public abstract java.util.List<com.zyc.model.Usertopaperhistory> com.zyc.service.UserToPaperHistoryService.query(com.zyc.model.Example.UsertopaperhistoryExample)
+2018-04-02 16:56:27.767  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/update],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperTempService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-02 16:56:27.767  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/delete],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperTempService.delete(com.zyc.model.Example.UsertopapertempExample)
+2018-04-02 16:56:27.767  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/insert],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperTempService.insert(com.zyc.model.Usertopapertemp)
+2018-04-02 16:56:27.767  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/query],methods=[POST]}" onto public abstract java.util.List<com.zyc.model.Usertopapertemp> com.zyc.service.UserToPaperTempService.query(com.zyc.model.Example.UsertopapertempExample)
+2018-04-02 16:56:27.769  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-02 16:56:27.769  INFO 20988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-02 16:56:27.804  INFO 20988 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-02 16:56:27.804  INFO 20988 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-02 16:56:27.845  INFO 20988 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-02 16:56:29.299  INFO 20988 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2018-04-02 16:56:31.077  INFO 20988 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2018-04-02 16:56:31.222  WARN 20988 --- [main] arterDeprecationWarningAutoConfiguration : spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+2018-04-02 16:56:31.254  INFO 20988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-02 16:56:31.262  INFO 20988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-04-02 16:56:31.262  INFO 20988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-04-02 16:56:31.263  INFO 20988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-04-02 16:56:31.265  INFO 20988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-04-02 16:56:31.276  INFO 20988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-04-02 16:56:31.288  INFO 20988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=373ebf74,type=ConfigurationPropertiesRebinder]
+2018-04-02 16:56:31.308  INFO 20988 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-04-02 16:56:31.318  INFO 20988 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-04-02 16:56:31.380  INFO 20988 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-04-02 16:56:31.582  INFO 20988 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-04-02 16:56:31.583  INFO 20988 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-04-02 16:56:31.809  INFO 20988 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-04-02 16:56:31.809  INFO 20988 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-04-02 16:56:32.225  INFO 20988 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-02 16:56:32.448  INFO 20988 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-04-02 16:56:32.448  INFO 20988 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-04-02 16:56:32.448  INFO 20988 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-04-02 16:56:32.448  INFO 20988 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-04-02 16:56:32.448  INFO 20988 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-04-02 16:56:32.448  INFO 20988 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-04-02 16:56:32.448  INFO 20988 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-04-02 16:56:32.653  INFO 20988 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-04-02 16:56:32.654  INFO 20988 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 90
+2018-04-02 16:56:32.656  INFO 20988 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-04-02 16:56:32.659  INFO 20988 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1522659392659 with initial instances count: 4
+2018-04-02 16:56:32.664  INFO 20988 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ANSWER-WEB with eureka with status UP
+2018-04-02 16:56:32.665  INFO 20988 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1522659392665, current=UP, previous=STARTING]
+2018-04-02 16:56:32.667  INFO 20988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-02 16:56:32.704  INFO 20988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-02 16:56:32.707 ERROR 20988 --- [main] o.a.coyote.http11.Http11NioProtocol      : Failed to start end point associated with ProtocolHandler ["http-nio-30003"]
+
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_101]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_101]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_101]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_101]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_101]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.zyc.AnswerApplication.main(AnswerApplication.java:17) [classes/:na]
+
+2018-04-02 16:56:32.708 ERROR 20988 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-30003]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-30003]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.zyc.AnswerApplication.main(AnswerApplication.java:17) [classes/:na]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1031) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_101]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_101]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_101]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_101]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_101]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	... 14 common frames omitted
+
+2018-04-02 16:56:32.715  INFO 20988 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-04-02 16:56:32.725  INFO 20988 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-04-02 16:56:32.731 ERROR 20988 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 30003 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 30003, or configure this application to listen on another port.
+
+2018-04-02 16:56:32.732  INFO 20988 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@373ebf74: startup date [Mon Apr 02 16:56:24 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6f96c77
+2018-04-02 16:56:32.732  INFO 20988 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ANSWER-WEB with eureka with status DOWN
+2018-04-02 16:56:32.732  WARN 20988 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1522659392732, current=DOWN, previous=UP]
+2018-04-02 16:56:32.732  INFO 20988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-02 16:56:32.733  INFO 20988 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-04-02 16:56:32.734  INFO 20988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-04-02 16:56:32.734  INFO 20988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-04-02 16:56:32.735  INFO 20988 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-04-02 16:56:32.735  INFO 20988 --- [main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2018-04-02 16:56:32.743  INFO 20988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-02 16:56:32.753  INFO 20988 --- [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - deregister  status: 200
+2018-04-02 16:56:32.759  INFO 20988 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2018-04-02 16:56:32.774  WARN 20988 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-02 16:56:32.774  INFO 20988 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-02 16:56:32.776  INFO 20988 --- [main] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@61a1ea2c: startup date [Mon Apr 02 16:56:26 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@373ebf74
+2018-04-02 16:56:32.777  WARN 20988 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception thrown from ApplicationListener handling ContextClosedEvent
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaAutoServiceRegistration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:216) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1080) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:283) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:253) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:177) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:140) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:399) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:991) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:958) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76) [spring-cloud-context-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:272) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.destroySingletons(FactoryBeanRegistrySupport.java:230) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1032) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1008) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:958) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:750) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.zyc.AnswerApplication.main(AnswerApplication.java:17) [classes/:na]
+
+2018-04-02 16:56:41.896  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-02 16:56:41.897  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-02 16:56:41.906  INFO 17392 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-02 16:58:04.170  INFO 10900 --- [main] com.zyc.AnswerApplication                : No active profile set, falling back to default profiles: default
+2018-04-02 16:58:04.188  INFO 10900 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@373ebf74: startup date [Mon Apr 02 16:58:04 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6f96c77
+2018-04-02 16:58:05.711  INFO 10900 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=24ffa92e-1b73-3c55-a103-65cca2c1e2c5
+2018-04-02 16:58:05.738  INFO 10900 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-02 16:58:05.776  INFO 10900 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UAnswerHistoryService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:58:05.778  INFO 10900 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UAnswerTempService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:58:05.779  INFO 10900 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UserToPaperHistoryService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:58:05.781  INFO 10900 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UserToPaperTempService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:58:05.988  INFO 10900 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ad1826e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-02 16:58:06.760  INFO 10900 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 30003 (http)
+2018-04-02 16:58:06.771  INFO 10900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-02 16:58:06.773  INFO 10900 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-04-02 16:58:06.990  INFO 10900 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-02 16:58:06.992  INFO 10900 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2803 ms
+2018-04-02 16:58:07.235  INFO 10900 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-02 16:58:07.240  INFO 10900 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-02 16:58:07.246  INFO 10900 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-02 16:58:07.248  INFO 10900 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-02 16:58:07.248  INFO 10900 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-02 16:58:07.330  INFO 10900 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@61a1ea2c: startup date [Mon Apr 02 16:58:07 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@373ebf74
+2018-04-02 16:58:07.393  INFO 10900 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-02 16:58:07.824  WARN 10900 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-02 16:58:07.824  INFO 10900 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-02 16:58:07.830  WARN 10900 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-02 16:58:07.830  INFO 10900 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-02 16:58:07.964  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@373ebf74: startup date [Mon Apr 02 16:58:04 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6f96c77
+2018-04-02 16:58:08.133  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryPaper/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.zyc.controller.AnswerPageController.queryPaper(java.lang.Integer)
+2018-04-02 16:58:08.135  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UAnswer/insert/tempUAnswer],methods=[POST]}" onto public java.lang.String com.zyc.controller.UAnswerController.insert(com.zyc.model.Uanswertemp)
+2018-04-02 16:58:08.136  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UAnswer/insert/historyUAnswer],methods=[POST]}" onto public java.lang.String com.zyc.controller.UAnswerController.tohistory(com.zyc.model.Uanswertemp) throws java.lang.CloneNotSupportedException
+2018-04-02 16:58:08.137  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaper/insert/tempuserToPaper],methods=[POST]}" onto public java.lang.String com.zyc.controller.UserToPaperController.insertTemp(com.zyc.model.Usertopapertemp)
+2018-04-02 16:58:08.138  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaper/insert/historyuserToPaper],methods=[POST]}" onto public java.lang.String com.zyc.controller.UserToPaperController.insertHistory(com.zyc.model.Usertopaperhistory)
+2018-04-02 16:58:08.139  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/update],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerHistoryService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-02 16:58:08.139  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/delete],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerHistoryService.delete(com.zyc.model.Example.UanswerhistoryExample)
+2018-04-02 16:58:08.140  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/insert],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerHistoryService.insert(com.zyc.model.Uanswerhistory)
+2018-04-02 16:58:08.140  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/query],methods=[POST]}" onto public abstract java.util.List<com.zyc.model.Uanswerhistory> com.zyc.service.UAnswerHistoryService.query(com.zyc.model.Example.UanswerhistoryExample)
+2018-04-02 16:58:08.140  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/answer],methods=[POST]}" onto public abstract java.lang.Double com.zyc.service.UAnswerHistoryService.score(com.zyc.model.Uanswerhistory) throws java.lang.CloneNotSupportedException
+2018-04-02 16:58:08.141  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/update],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerTempService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-02 16:58:08.142  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/delete],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerTempService.delete(com.zyc.model.Example.UanswertempExample)
+2018-04-02 16:58:08.142  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/insert],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerTempService.insert(com.zyc.model.Uanswertemp)
+2018-04-02 16:58:08.142  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/query],methods=[POST]}" onto public abstract java.util.List<com.zyc.model.Uanswertemp> com.zyc.service.UAnswerTempService.query(com.zyc.model.Example.UanswertempExample)
+2018-04-02 16:58:08.143  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/toHistory]}" onto public abstract java.lang.Integer com.zyc.service.UAnswerTempService.toHistory(com.zyc.model.Uanswertemp)
+2018-04-02 16:58:08.150  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/update],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperHistoryService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-02 16:58:08.150  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/delete],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperHistoryService.delete(com.zyc.model.Example.UsertopaperhistoryExample)
+2018-04-02 16:58:08.150  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/insert],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperHistoryService.insert(com.zyc.model.Usertopaperhistory)
+2018-04-02 16:58:08.151  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/query],methods=[POST]}" onto public abstract java.util.List<com.zyc.model.Usertopaperhistory> com.zyc.service.UserToPaperHistoryService.query(com.zyc.model.Example.UsertopaperhistoryExample)
+2018-04-02 16:58:08.152  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/update],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperTempService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-02 16:58:08.153  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/delete],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperTempService.delete(com.zyc.model.Example.UsertopapertempExample)
+2018-04-02 16:58:08.154  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/insert],methods=[POST]}" onto public abstract java.lang.Integer com.zyc.service.UserToPaperTempService.insert(com.zyc.model.Usertopapertemp)
+2018-04-02 16:58:08.154  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/query],methods=[POST]}" onto public abstract java.util.List<com.zyc.model.Usertopapertemp> com.zyc.service.UserToPaperTempService.query(com.zyc.model.Example.UsertopapertempExample)
+2018-04-02 16:58:08.156  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-02 16:58:08.157  INFO 10900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-02 16:58:08.205  INFO 10900 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-02 16:58:08.206  INFO 10900 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-02 16:58:08.264  INFO 10900 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-02 16:58:09.835  INFO 10900 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2018-04-02 16:58:11.774  INFO 10900 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2018-04-02 16:58:11.958  WARN 10900 --- [main] arterDeprecationWarningAutoConfiguration : spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+2018-04-02 16:58:11.994  INFO 10900 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-02 16:58:12.001  INFO 10900 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-04-02 16:58:12.002  INFO 10900 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-04-02 16:58:12.002  INFO 10900 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-04-02 16:58:12.004  INFO 10900 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-04-02 16:58:12.015  INFO 10900 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-04-02 16:58:12.022  INFO 10900 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=373ebf74,type=ConfigurationPropertiesRebinder]
+2018-04-02 16:58:12.034  INFO 10900 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-04-02 16:58:12.041  INFO 10900 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-04-02 16:58:12.098  INFO 10900 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-04-02 16:58:12.422  INFO 10900 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-04-02 16:58:12.422  INFO 10900 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-04-02 16:58:12.634  INFO 10900 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-04-02 16:58:12.635  INFO 10900 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-04-02 16:58:13.034  INFO 10900 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-02 16:58:13.193  INFO 10900 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-04-02 16:58:13.194  INFO 10900 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-04-02 16:58:13.194  INFO 10900 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-04-02 16:58:13.194  INFO 10900 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-04-02 16:58:13.194  INFO 10900 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-04-02 16:58:13.194  INFO 10900 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-04-02 16:58:13.194  INFO 10900 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-04-02 16:58:13.398  INFO 10900 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-04-02 16:58:13.399  INFO 10900 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 90
+2018-04-02 16:58:13.401  INFO 10900 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-04-02 16:58:13.404  INFO 10900 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1522659493404 with initial instances count: 4
+2018-04-02 16:58:13.408  INFO 10900 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ANSWER-WEB with eureka with status UP
+2018-04-02 16:58:13.409  INFO 10900 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1522659493409, current=UP, previous=STARTING]
+2018-04-02 16:58:13.410  INFO 10900 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-02 16:58:13.447  INFO 10900 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-02 16:58:13.475  INFO 10900 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 30003 (http)
+2018-04-02 16:58:13.475  INFO 10900 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 30003
+2018-04-02 16:58:13.478  INFO 10900 --- [main] com.zyc.AnswerApplication                : Started AnswerApplication in 13.559 seconds (JVM running for 14.167)
+2018-04-02 16:59:43.425  INFO 10900 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-02 16:59:43.426  INFO 10900 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-02 16:59:43.442  INFO 10900 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-02 17:01:13.464  INFO 10900 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-02 17:01:13.465  INFO 10900 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-02 17:01:13.477  INFO 10900 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-02 17:02:43.504  INFO 10900 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-02 17:02:43.525  INFO 10900 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-02 17:02:43.558  INFO 10900 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-02 17:03:13.200  INFO 10900 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-02 17:04:13.576  INFO 10900 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-02 17:04:13.576  INFO 10900 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-02 17:04:13.587  INFO 10900 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-02 17:05:43.605  INFO 10900 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-02 17:05:43.605  INFO 10900 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-02 17:05:43.615  INFO 10900 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-02 17:07:13.634  INFO 10900 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-02 17:07:13.634  INFO 10900 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-02 17:07:13.644  INFO 10900 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 10:43:19.500  INFO 236 --- [main] com.zyc.AnswerApplication                : No active profile set, falling back to default profiles: default
+2018-04-13 10:43:19.547  INFO 236 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e93f3d5: startup date [Fri Apr 13 10:43:19 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@54e041a4
+2018-04-13 10:43:21.022  INFO 236 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=24ffa92e-1b73-3c55-a103-65cca2c1e2c5
+2018-04-13 10:43:21.047  INFO 236 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-13 10:43:21.099  INFO 236 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UAnswerHistoryService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-13 10:43:21.104  INFO 236 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UAnswerTempService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-13 10:43:21.107  INFO 236 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UserToPaperHistoryService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-13 10:43:21.111  INFO 236 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UserToPaperTempService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-13 10:43:21.245  INFO 236 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$10b228d5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-13 10:43:22.172  INFO 236 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 30003 (http)
+2018-04-13 10:43:22.185  INFO 236 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-13 10:43:22.188  INFO 236 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-04-13 10:43:22.456  INFO 236 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-13 10:43:22.457  INFO 236 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2910 ms
+2018-04-13 10:43:22.673  INFO 236 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-13 10:43:22.680  INFO 236 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-13 10:43:22.681  INFO 236 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-13 10:43:22.681  INFO 236 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-13 10:43:22.681  INFO 236 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-13 10:43:22.762  INFO 236 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4dfe8b37: startup date [Fri Apr 13 10:43:22 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e93f3d5
+2018-04-13 10:43:22.795  INFO 236 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-13 10:43:23.396  WARN 236 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-13 10:43:23.396  INFO 236 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-13 10:43:23.404  WARN 236 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-13 10:43:23.404  INFO 236 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-13 10:43:23.737  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e93f3d5: startup date [Fri Apr 13 10:43:19 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@54e041a4
+2018-04-13 10:43:23.826  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryPaper/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.zyc.controller.AnswerPageController.queryPaper(java.lang.Integer)
+2018-04-13 10:43:23.829  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UAnswer/insert/tempUAnswer],methods=[POST]}" onto public java.lang.String com.zyc.controller.UAnswerController.insert(com.zyc.model.Uanswertemp) throws com.zyc.exception.StatusException
+2018-04-13 10:43:23.829  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UAnswer/insert/historyUAnswer],methods=[POST]}" onto public java.lang.String com.zyc.controller.UAnswerController.tohistory(com.zyc.model.Uanswertemp) throws java.lang.CloneNotSupportedException,com.zyc.exception.StatusException
+2018-04-13 10:43:23.829  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaper/insert/historyuserToPaper],methods=[POST]}" onto public java.lang.String com.zyc.controller.UserToPaperController.insertHistory(com.zyc.model.Usertopaperhistory)
+2018-04-13 10:43:23.830  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaper/insert/tempuserToPaper],methods=[POST]}" onto public java.lang.String com.zyc.controller.UserToPaperController.insertTemp(com.zyc.model.Usertopapertemp)
+2018-04-13 10:43:23.832  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/update],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerHistoryService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-13 10:43:23.832  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/delete],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerHistoryService.delete(com.zyc.model.Example.UanswerhistoryExample)
+2018-04-13 10:43:23.832  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/insert],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerHistoryService.insert(com.zyc.model.Uanswerhistory)
+2018-04-13 10:43:23.832  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/query],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerHistoryService.query(com.zyc.model.Example.UanswerhistoryExample)
+2018-04-13 10:43:23.832  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/answer],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerHistoryService.score(com.zyc.model.Uanswerhistory) throws java.lang.CloneNotSupportedException
+2018-04-13 10:43:23.834  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/update],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerTempService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-13 10:43:23.835  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/delete],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerTempService.delete(com.zyc.model.Example.UanswertempExample)
+2018-04-13 10:43:23.835  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/insert],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerTempService.insert(com.zyc.model.Uanswertemp)
+2018-04-13 10:43:23.835  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/query],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerTempService.query(com.zyc.model.Example.UanswertempExample)
+2018-04-13 10:43:23.836  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/toHistory]}" onto public abstract java.lang.String com.zyc.service.UAnswerTempService.toHistory(com.zyc.model.Uanswertemp)
+2018-04-13 10:43:23.838  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/update],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperHistoryService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-13 10:43:23.838  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/delete],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperHistoryService.delete(com.zyc.model.Example.UsertopaperhistoryExample)
+2018-04-13 10:43:23.838  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/insert],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperHistoryService.insert(com.zyc.model.Usertopaperhistory)
+2018-04-13 10:43:23.838  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/query],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperHistoryService.query(com.zyc.model.Example.UsertopaperhistoryExample)
+2018-04-13 10:43:23.839  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/update],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperTempService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-13 10:43:23.840  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/delete],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperTempService.delete(com.zyc.model.Example.UsertopapertempExample)
+2018-04-13 10:43:23.840  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/insert],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperTempService.insert(com.zyc.model.Usertopapertemp)
+2018-04-13 10:43:23.840  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/query],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperTempService.query(com.zyc.model.Example.UsertopapertempExample)
+2018-04-13 10:43:23.842  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-13 10:43:23.843  INFO 236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-13 10:43:23.912  INFO 236 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-13 10:43:23.912  INFO 236 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-13 10:43:24.001  INFO 236 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-13 10:43:25.545  INFO 236 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2018-04-13 10:43:27.262  INFO 236 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2018-04-13 10:43:27.539  WARN 236 --- [main] arterDeprecationWarningAutoConfiguration : spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+2018-04-13 10:43:27.735  INFO 236 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-13 10:43:27.789  INFO 236 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-04-13 10:43:27.790  INFO 236 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-04-13 10:43:27.792  INFO 236 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-04-13 10:43:27.795  INFO 236 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-04-13 10:43:27.809  INFO 236 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-04-13 10:43:27.826  INFO 236 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=e93f3d5,type=ConfigurationPropertiesRebinder]
+2018-04-13 10:43:27.848  INFO 236 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-04-13 10:43:27.871  INFO 236 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-04-13 10:43:27.966  INFO 236 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-04-13 10:43:28.322  INFO 236 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-04-13 10:43:28.322  INFO 236 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-04-13 10:43:28.490  INFO 236 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-04-13 10:43:28.490  INFO 236 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-04-13 10:43:28.836  INFO 236 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-13 10:43:28.977  INFO 236 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-04-13 10:43:28.977  INFO 236 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-04-13 10:43:28.977  INFO 236 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-04-13 10:43:28.977  INFO 236 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-04-13 10:43:28.977  INFO 236 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-04-13 10:43:28.977  INFO 236 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-04-13 10:43:28.977  INFO 236 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-04-13 10:43:29.288  INFO 236 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-04-13 10:43:29.291  INFO 236 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 90
+2018-04-13 10:43:29.294  INFO 236 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-04-13 10:43:29.302  INFO 236 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1523587409301 with initial instances count: 5
+2018-04-13 10:43:29.312  INFO 236 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ANSWER-WEB with eureka with status UP
+2018-04-13 10:43:29.314  INFO 236 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1523587409314, current=UP, previous=STARTING]
+2018-04-13 10:43:29.320  INFO 236 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 10:43:29.366  INFO 236 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 10:43:29.430  INFO 236 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 30003 (http)
+2018-04-13 10:43:29.433  INFO 236 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 30003
+2018-04-13 10:43:29.436  INFO 236 --- [main] com.zyc.AnswerApplication                : Started AnswerApplication in 14.716 seconds (JVM running for 15.987)
+2018-04-13 10:44:59.321  INFO 236 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 10:44:59.322  INFO 236 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 10:44:59.336  INFO 236 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 10:45:11.823  INFO 18508 --- [main] com.zyc.AnswerApplication                : No active profile set, falling back to default profiles: default
+2018-04-13 10:45:11.846  INFO 18508 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@682c1e93: startup date [Fri Apr 13 10:45:11 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@54e041a4
+2018-04-13 10:45:13.938  INFO 18508 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=24ffa92e-1b73-3c55-a103-65cca2c1e2c5
+2018-04-13 10:45:13.969  INFO 18508 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-13 10:45:14.005  INFO 18508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UAnswerHistoryService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-13 10:45:14.007  INFO 18508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UAnswerTempService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-13 10:45:14.008  INFO 18508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UserToPaperHistoryService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-13 10:45:14.009  INFO 18508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UserToPaperTempService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-13 10:45:14.213  INFO 18508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$eba5caea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-13 10:45:15.347  INFO 18508 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 30003 (http)
+2018-04-13 10:45:15.365  INFO 18508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-13 10:45:15.366  INFO 18508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-04-13 10:45:15.662  INFO 18508 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-13 10:45:15.663  INFO 18508 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3817 ms
+2018-04-13 10:45:15.955  INFO 18508 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-13 10:45:15.963  INFO 18508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-13 10:45:15.964  INFO 18508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-13 10:45:15.964  INFO 18508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-13 10:45:15.964  INFO 18508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-13 10:45:16.116  INFO 18508 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1e3df614: startup date [Fri Apr 13 10:45:16 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@682c1e93
+2018-04-13 10:45:16.162  INFO 18508 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-13 10:45:17.150  WARN 18508 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-13 10:45:17.151  INFO 18508 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-13 10:45:17.167  WARN 18508 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-13 10:45:17.167  INFO 18508 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-13 10:45:17.603  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@682c1e93: startup date [Fri Apr 13 10:45:11 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@54e041a4
+2018-04-13 10:45:17.812  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryPaper/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.zyc.controller.AnswerPageController.queryPaper(java.lang.Integer)
+2018-04-13 10:45:17.814  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UAnswer/insert/tempUAnswer],methods=[POST]}" onto public java.lang.String com.zyc.controller.UAnswerController.insert(com.zyc.model.Uanswertemp) throws com.zyc.exception.StatusException
+2018-04-13 10:45:17.815  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/UAnswer/insert/historyUAnswer],methods=[POST]}" onto public java.lang.String com.zyc.controller.UAnswerController.tohistory(com.zyc.model.Uanswertemp) throws java.lang.CloneNotSupportedException,com.zyc.exception.StatusException
+2018-04-13 10:45:17.819  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaper/insert/tempuserToPaper],methods=[POST]}" onto public java.lang.String com.zyc.controller.UserToPaperController.insertTemp(com.zyc.model.Usertopapertemp) throws com.zyc.exception.StatusException
+2018-04-13 10:45:17.834  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaper/insert/historyuserToPaper],methods=[POST]}" onto public java.lang.String com.zyc.controller.UserToPaperController.insertHistory(com.zyc.model.Usertopaperhistory) throws com.zyc.exception.StatusException
+2018-04-13 10:45:17.841  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/update],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerHistoryService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-13 10:45:17.841  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/delete],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerHistoryService.delete(com.zyc.model.Example.UanswerhistoryExample)
+2018-04-13 10:45:17.842  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/insert],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerHistoryService.insert(com.zyc.model.Uanswerhistory)
+2018-04-13 10:45:17.846  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/query],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerHistoryService.query(com.zyc.model.Example.UanswerhistoryExample)
+2018-04-13 10:45:17.846  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/answer],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerHistoryService.score(com.zyc.model.Uanswerhistory) throws java.lang.CloneNotSupportedException
+2018-04-13 10:45:17.850  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/update],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerTempService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-13 10:45:17.851  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/delete],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerTempService.delete(com.zyc.model.Example.UanswertempExample)
+2018-04-13 10:45:17.854  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/insert],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerTempService.insert(com.zyc.model.Uanswertemp)
+2018-04-13 10:45:17.855  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/query],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerTempService.query(com.zyc.model.Example.UanswertempExample)
+2018-04-13 10:45:17.856  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/toHistory]}" onto public abstract java.lang.String com.zyc.service.UAnswerTempService.toHistory(com.zyc.model.Uanswertemp)
+2018-04-13 10:45:17.894  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/update],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperHistoryService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-13 10:45:17.895  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/delete],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperHistoryService.delete(com.zyc.model.Example.UsertopaperhistoryExample)
+2018-04-13 10:45:17.895  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/insert],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperHistoryService.insert(com.zyc.model.Usertopaperhistory)
+2018-04-13 10:45:17.895  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/query],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperHistoryService.query(com.zyc.model.Example.UsertopaperhistoryExample)
+2018-04-13 10:45:17.897  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/update],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperTempService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-13 10:45:17.899  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/delete],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperTempService.delete(com.zyc.model.Example.UsertopapertempExample)
+2018-04-13 10:45:17.901  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/insert],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperTempService.insert(com.zyc.model.Usertopapertemp)
+2018-04-13 10:45:17.903  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/query],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperTempService.query(com.zyc.model.Example.UsertopapertempExample)
+2018-04-13 10:45:17.906  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-13 10:45:17.907  INFO 18508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-13 10:45:18.091  INFO 18508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-13 10:45:18.093  INFO 18508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-13 10:45:18.202  INFO 18508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-13 10:45:20.217  INFO 18508 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2018-04-13 10:45:22.683  INFO 18508 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2018-04-13 10:45:22.930  WARN 18508 --- [main] arterDeprecationWarningAutoConfiguration : spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+2018-04-13 10:45:23.102  INFO 18508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-13 10:45:23.114  INFO 18508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-04-13 10:45:23.114  INFO 18508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-04-13 10:45:23.115  INFO 18508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-04-13 10:45:23.120  INFO 18508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-04-13 10:45:23.149  INFO 18508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-04-13 10:45:23.171  INFO 18508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=682c1e93,type=ConfigurationPropertiesRebinder]
+2018-04-13 10:45:23.206  INFO 18508 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-04-13 10:45:23.270  INFO 18508 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-04-13 10:45:23.532  INFO 18508 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-04-13 10:45:24.092  INFO 18508 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-04-13 10:45:24.092  INFO 18508 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-04-13 10:45:24.434  INFO 18508 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-04-13 10:45:24.434  INFO 18508 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-04-13 10:45:24.967  INFO 18508 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-13 10:45:25.178  INFO 18508 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-04-13 10:45:25.179  INFO 18508 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-04-13 10:45:25.179  INFO 18508 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-04-13 10:45:25.179  INFO 18508 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-04-13 10:45:25.179  INFO 18508 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-04-13 10:45:25.179  INFO 18508 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-04-13 10:45:25.179  INFO 18508 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-04-13 10:45:25.621  INFO 18508 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-04-13 10:45:25.623  INFO 18508 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 90
+2018-04-13 10:45:25.626  INFO 18508 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-04-13 10:45:25.629  INFO 18508 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1523587525628 with initial instances count: 6
+2018-04-13 10:45:25.634  INFO 18508 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ANSWER-WEB with eureka with status UP
+2018-04-13 10:45:25.634  INFO 18508 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1523587525634, current=UP, previous=STARTING]
+2018-04-13 10:45:25.636  INFO 18508 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 10:45:25.693  INFO 18508 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 10:45:25.738  INFO 18508 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 30003 (http)
+2018-04-13 10:45:25.740  INFO 18508 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 30003
+2018-04-13 10:45:25.744  INFO 18508 --- [main] com.zyc.AnswerApplication                : Started AnswerApplication in 19.008 seconds (JVM running for 20.45)
+2018-04-13 10:46:55.647  INFO 18508 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 10:46:55.647  INFO 18508 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 10:46:55.659  INFO 18508 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 10:47:08.104  INFO 5312 --- [main] com.zyc.AnswerApplication                : No active profile set, falling back to default profiles: default
+2018-04-13 10:47:08.126  INFO 5312 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ea94d6a: startup date [Fri Apr 13 10:47:08 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@54e041a4
+2018-04-13 10:47:09.728  INFO 5312 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=24ffa92e-1b73-3c55-a103-65cca2c1e2c5
+2018-04-13 10:47:09.760  INFO 5312 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-13 10:47:09.885  INFO 5312 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UAnswerHistoryService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-13 10:47:09.887  INFO 5312 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UAnswerTempService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-13 10:47:09.889  INFO 5312 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UserToPaperHistoryService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-13 10:47:09.891  INFO 5312 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.zyc.service.UserToPaperTempService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-13 10:47:10.142  INFO 5312 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$32d4f53f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-13 10:47:11.071  INFO 5312 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 30003 (http)
+2018-04-13 10:47:11.093  INFO 5312 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-13 10:47:11.096  INFO 5312 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-04-13 10:47:11.618  INFO 5312 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-13 10:47:11.620  INFO 5312 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3494 ms
+2018-04-13 10:47:12.439  INFO 5312 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-13 10:47:12.447  INFO 5312 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-13 10:47:12.456  INFO 5312 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-13 10:47:12.456  INFO 5312 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-13 10:47:12.456  INFO 5312 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-13 10:47:12.643  INFO 5312 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@30bf26df: startup date [Fri Apr 13 10:47:12 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ea94d6a
+2018-04-13 10:47:12.670  INFO 5312 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-13 10:47:13.263  WARN 5312 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-13 10:47:13.264  INFO 5312 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-13 10:47:13.287  WARN 5312 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-04-13 10:47:13.288  INFO 5312 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-04-13 10:47:13.699  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ea94d6a: startup date [Fri Apr 13 10:47:08 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@54e041a4
+2018-04-13 10:47:13.789  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryPaper/{id}]}" onto public org.springframework.web.servlet.ModelAndView com.zyc.controller.AnswerPageController.queryPaper(java.lang.Integer)
+2018-04-13 10:47:13.790  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insert/tempUAnswer],methods=[POST]}" onto public java.lang.String com.zyc.controller.UAnswerController.insert(com.zyc.model.Uanswertemp) throws com.zyc.exception.StatusException
+2018-04-13 10:47:13.791  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insert/historyUAnswer],methods=[POST]}" onto public java.lang.String com.zyc.controller.UAnswerController.tohistory(com.zyc.model.Uanswertemp) throws java.lang.CloneNotSupportedException,com.zyc.exception.StatusException
+2018-04-13 10:47:13.791  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insert/tempuserToPaper],methods=[POST]}" onto public java.lang.String com.zyc.controller.UserToPaperController.insertTemp(com.zyc.model.Usertopapertemp) throws com.zyc.exception.StatusException
+2018-04-13 10:47:13.792  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insert/historyuserToPaper],methods=[POST]}" onto public java.lang.String com.zyc.controller.UserToPaperController.insertHistory(com.zyc.model.Usertopaperhistory) throws com.zyc.exception.StatusException
+2018-04-13 10:47:13.794  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/update],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerHistoryService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-13 10:47:13.794  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/delete],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerHistoryService.delete(com.zyc.model.Example.UanswerhistoryExample)
+2018-04-13 10:47:13.795  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/insert],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerHistoryService.insert(com.zyc.model.Uanswerhistory)
+2018-04-13 10:47:13.796  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/query],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerHistoryService.query(com.zyc.model.Example.UanswerhistoryExample)
+2018-04-13 10:47:13.797  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserHistoryController/answer],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerHistoryService.score(com.zyc.model.Uanswerhistory) throws java.lang.CloneNotSupportedException
+2018-04-13 10:47:13.799  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/update],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerTempService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-13 10:47:13.799  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/delete],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerTempService.delete(com.zyc.model.Example.UanswertempExample)
+2018-04-13 10:47:13.799  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/insert],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerTempService.insert(com.zyc.model.Uanswertemp)
+2018-04-13 10:47:13.799  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/query],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UAnswerTempService.query(com.zyc.model.Example.UanswertempExample)
+2018-04-13 10:47:13.800  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/uAnserTempController/toHistory]}" onto public abstract java.lang.String com.zyc.service.UAnswerTempService.toHistory(com.zyc.model.Uanswertemp)
+2018-04-13 10:47:13.802  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/update],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperHistoryService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-13 10:47:13.802  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/delete],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperHistoryService.delete(com.zyc.model.Example.UsertopaperhistoryExample)
+2018-04-13 10:47:13.802  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/insert],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperHistoryService.insert(com.zyc.model.Usertopaperhistory)
+2018-04-13 10:47:13.803  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperHistory/query],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperHistoryService.query(com.zyc.model.Example.UsertopaperhistoryExample)
+2018-04-13 10:47:13.804  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/update],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperTempService.update(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2018-04-13 10:47:13.804  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/delete],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperTempService.delete(com.zyc.model.Example.UsertopapertempExample)
+2018-04-13 10:47:13.805  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/insert],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperTempService.insert(com.zyc.model.Usertopapertemp)
+2018-04-13 10:47:13.805  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userToPaperTemp/query],methods=[POST]}" onto public abstract java.lang.String com.zyc.service.UserToPaperTempService.query(com.zyc.model.Example.UsertopapertempExample)
+2018-04-13 10:47:13.808  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-13 10:47:13.809  INFO 5312 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-13 10:47:13.872  INFO 5312 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-13 10:47:13.874  INFO 5312 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-13 10:47:14.036  INFO 5312 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-13 10:47:16.418  INFO 5312 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2018-04-13 10:47:18.653  INFO 5312 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2018-04-13 10:47:18.889  WARN 5312 --- [main] arterDeprecationWarningAutoConfiguration : spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+2018-04-13 10:47:19.050  INFO 5312 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-13 10:47:19.063  INFO 5312 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-04-13 10:47:19.065  INFO 5312 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-04-13 10:47:19.069  INFO 5312 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-04-13 10:47:19.072  INFO 5312 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-04-13 10:47:19.096  INFO 5312 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-04-13 10:47:19.119  INFO 5312 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=6ea94d6a,type=ConfigurationPropertiesRebinder]
+2018-04-13 10:47:19.153  INFO 5312 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-04-13 10:47:19.168  INFO 5312 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-04-13 10:47:19.242  INFO 5312 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-04-13 10:47:19.546  INFO 5312 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-04-13 10:47:19.546  INFO 5312 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-04-13 10:47:20.122  INFO 5312 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-04-13 10:47:20.122  INFO 5312 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-04-13 10:47:20.734  INFO 5312 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-13 10:47:20.911  INFO 5312 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-04-13 10:47:20.911  INFO 5312 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-04-13 10:47:20.911  INFO 5312 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-04-13 10:47:20.912  INFO 5312 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-04-13 10:47:20.912  INFO 5312 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-04-13 10:47:20.912  INFO 5312 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-04-13 10:47:20.912  INFO 5312 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-04-13 10:47:21.183  INFO 5312 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-04-13 10:47:21.185  INFO 5312 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 90
+2018-04-13 10:47:21.189  INFO 5312 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-04-13 10:47:21.192  INFO 5312 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1523587641191 with initial instances count: 6
+2018-04-13 10:47:21.198  INFO 5312 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ANSWER-WEB with eureka with status UP
+2018-04-13 10:47:21.198  INFO 5312 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1523587641198, current=UP, previous=STARTING]
+2018-04-13 10:47:21.199  INFO 5312 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 10:47:21.248  INFO 5312 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 10:47:21.306  INFO 5312 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 30003 (http)
+2018-04-13 10:47:21.307  INFO 5312 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 30003
+2018-04-13 10:47:21.310  INFO 5312 --- [main] com.zyc.AnswerApplication                : Started AnswerApplication in 17.99 seconds (JVM running for 19.23)
+2018-04-13 10:48:51.209  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 10:48:51.209  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 10:48:51.223  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 10:50:21.247  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 10:50:21.247  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 10:50:21.254  INFO 5312 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 10:50:21.263  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 10:50:21.282  INFO 5312 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 10:51:51.293  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 10:51:51.293  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 10:51:51.307  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 10:52:20.914  INFO 5312 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-13 10:53:21.341  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 10:53:21.342  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 10:53:21.359  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 10:54:51.377  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 10:54:51.377  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 10:54:51.389  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 10:56:21.406  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 10:56:21.407  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 10:56:21.418  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 10:57:20.915  INFO 5312 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-13 10:57:51.438  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 10:57:51.438  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 10:57:51.453  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 10:59:21.472  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 10:59:21.472  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 10:59:21.486  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:00:51.503  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:00:51.503  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:00:51.512  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:02:20.916  INFO 5312 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-13 11:02:21.528  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:02:21.529  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:02:21.539  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:03:51.555  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:03:51.555  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:03:51.564  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:05:21.580  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:05:21.580  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:05:21.589  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:06:51.605  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:06:51.606  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:06:51.614  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:07:20.918  INFO 5312 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-13 11:08:21.631  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:08:21.631  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:08:21.640  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:09:51.701  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:09:51.701  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:09:51.723  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:11:21.741  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:11:21.742  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:11:21.752  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:12:20.919  INFO 5312 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-13 11:12:51.771  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:12:51.771  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:12:51.780  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:14:21.799  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:14:21.799  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:14:21.810  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:15:51.826  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:15:51.827  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:15:51.836  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:17:20.921  INFO 5312 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-13 11:17:21.852  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:17:21.853  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:17:21.861  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:18:51.879  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:18:51.879  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:18:51.888  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:20:21.907  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:20:21.908  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:20:21.918  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:21:51.934  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:21:51.935  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:21:51.944  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:22:20.921  INFO 5312 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-13 11:23:21.963  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:23:21.963  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:23:21.972  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:24:51.994  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:24:51.994  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:24:52.004  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:26:22.021  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:26:22.021  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:26:22.031  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:27:20.922  INFO 5312 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-13 11:27:52.051  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:27:52.051  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:27:52.061  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:29:22.077  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:29:22.077  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:29:22.087  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:30:52.107  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:30:52.108  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:30:52.120  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:32:20.943  INFO 5312 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-04-13 11:32:22.138  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:32:22.138  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:32:22.147  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:33:52.170  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:33:52.171  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:33:52.183  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:35:22.202  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:35:22.202  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:35:22.213  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:36:52.235  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - Re-registering apps/ANSWER-WEB
+2018-04-13 11:36:52.235  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003: registering service...
+2018-04-13 11:36:52.288  INFO 5312 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANSWER-WEB/ANSWER-WEB:30003 - registration status: 204
+2018-04-13 11:37:20.944  INFO 5312 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

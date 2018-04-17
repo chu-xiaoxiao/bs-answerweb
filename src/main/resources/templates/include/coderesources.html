@@ -1,0 +1,77 @@
+<script src="/resource/coderesources/lib/codemirror.js"></script>
+<link rel="stylesheet" href="/resource/coderesources/lib/codemirror.css"/>
+
+<script src="/resource/coderesources/clike.js"></script>
+
+<!--引入css文件，用以支持主题-->
+<link rel="stylesheet" href="/resource/coderesources/theme/eclipse.css"/>
+<link rel="stylesheet" href="/resource/coderesources/theme/seti.css"/>
+<link rel="stylesheet" href="/resource/coderesources/theme/dracula.css"/>
+
+<!--引入js，绑定Vim-->
+<link rel="stylesheet" href="/resource/coderesources/addon/dialog/dialog.css"/>
+<script src="/resource/coderesources/keymap/vim.js"></script>
+<script src="/resource/coderesources/addon/search/searchcursor.js"></script>
+<!--改善vim输入命令时的样式-->
+<script src="/resource/coderesources/addon/dialog/dialog.js"></script>
+
+<!--支持代码折叠-->
+<link rel="stylesheet" href="/resource/coderesources/addon/fold/foldgutter.css"/>
+<script src="/resource/coderesources/addon/fold/foldcode.js"></script>
+<script src="/resource/coderesources/addon/fold/foldgutter.js"></script>
+<script src="/resource/coderesources/addon/fold/brace-fold.js"></script>
+<script src="/resource/coderesources/addon/fold/comment-fold.js"></script>
+
+<!--全屏模式-->
+<link rel="stylesheet" href="/resource/coderesources/addon/display/fullscreen.css"/>
+<script src="/resource/coderesources/addon/display/fullscreen.js"></script>
+
+<!--括号匹配-->
+<script src="/resource/coderesources/addon/edit/matchbrackets.js"></script>
+
+<!--自动补全-->
+<link rel="stylesheet" href="/resource/coderesources/addon/hint/show-hint.css"/>
+<script src="/resource/coderesources/addon/hint/show-hint.js"></script>
+<script src="/resource/coderesources/addon/hint/anyword-hint.js"></script>
+
+<script>
+    function createEditor(){
+        var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+            //Java高亮显示
+            mode: "text/x-java",
+            //显示行号
+            lineNumbers: true,
+            //设置主题
+            theme: "seti",
+            //代码折叠
+            lineWrapping: true,
+            foldGutter: true,
+            gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"],
+            //全屏模式
+            fullScreen: false,
+            //括号匹配
+            matchBrackets: true,
+            //智能提示
+            extraKeys: {"Alt-Enter": "autocomplete"},
+            //自动换行
+            smartIndent: true,
+            //tab替换空格
+            indentWithTabs: true
+        });
+
+        $("#compile").click(function () {
+            $.ajax({
+                url: "/compile/java",
+                data: {"$^^compilercode^^$": editor.getValue().replace(/%/g,"%").replace(/\&/g,"&").replace(/\+/g,"+")},
+                method: "post",
+                success: function (data) {
+                    $("#result").val(data);
+                }
+            })
+            return false;
+        });
+        editor.setOption('change', function (ObjEditor) {
+            editor.showHint();
+        });
+    }
+</script>
